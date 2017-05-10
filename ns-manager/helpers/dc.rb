@@ -66,7 +66,7 @@ module DcHelper
 
     # Return the status of a PoP
     def popStatus(pop_info)
-        keystone_url = getPoPExtraInfo(pop_info[:extra_info])['keystone']
+        keystone_url = getPoPExtraInfo(pop_info[:extra_info])['keystone-endpoint']
         tenant_name = pop_info[:tenant_name]
         username = pop_info[:user]
         password = pop_info[:password]
